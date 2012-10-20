@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            class="com.mountainminds.eclipseinspector.ui.debug.DebugPropertyPage"
+            id="com.mountainminds.eclipseinspector.debug"
+            name="Debug">
+      </page>
+      <page
+            category="com.mountainminds.eclipseinspector.debug"
+            class="com.mountainminds.eclipseinspector.ui.debug.AdaptersPropertyPage"
+            id="com.mountainminds.eclipseinspector.adapters"
+            name="Adapters">
+      </page>
+   </extension>
+
+</plugin>
