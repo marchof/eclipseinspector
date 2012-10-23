@@ -15,5 +15,27 @@
             name="Adapters">
       </page>
    </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="com.mountainminds.eclipseinspector.commands"
+            name="Eclipse Inspector">
+      </category>
+      <command
+            categoryId="com.mountainminds.eclipseinspector.commands"
+            defaultHandler="com.mountainminds.eclipseinspector.ui.layout.ColorLayoutHandler"
+            id="com.mountainminds.eclipseinspector.colorLayouts"
+            name="Color Layout">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="com.mountainminds.eclipseinspector.colorLayouts"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+M3+F5">
+      </key>
+   </extension>
 
 </plugin>
